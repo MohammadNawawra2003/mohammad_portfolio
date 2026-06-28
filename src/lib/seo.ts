@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { profile } from "@/data/profile";
-import { absoluteUrl } from "@/lib/utils";
+import { absoluteUrl, withBasePath } from "@/lib/utils";
 
 const TITLE = `${profile.name} — Computational Engineer & Odoo Developer`;
 const DESCRIPTION = profile.summary;
@@ -40,7 +40,7 @@ export const siteMetadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/images/og.png",
+        url: absoluteUrl("/images/og.png"),
         width: 1200,
         height: 630,
         alt: `${profile.name} — Computational Engineer & Odoo Developer`,
@@ -51,7 +51,7 @@ export const siteMetadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/images/og.png"],
+    images: [absoluteUrl("/images/og.png")],
   },
   robots: {
     index: true,
@@ -60,12 +60,12 @@ export const siteMetadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icons/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: withBasePath("/icons/favicon.svg"), type: "image/svg+xml" },
+      { url: withBasePath("/favicon.ico"), sizes: "any" },
     ],
-    apple: "/icons/apple-touch-icon.png",
+    apple: withBasePath("/icons/apple-touch-icon.png"),
   },
-  manifest: "/manifest.webmanifest",
+  manifest: withBasePath("/manifest.webmanifest"),
   category: "technology",
 };
 
@@ -88,7 +88,7 @@ export function personJsonLd() {
     },
     sameAs: [
       "https://www.linkedin.com/in/mnawawra/",
-      "https://mohammadnawawra2003.github.io/mohammad-portfolio/",
+      "https://mohammadnawawra2003.github.io/mohammad_portfolio/",
     ],
     alumniOf: [
       {

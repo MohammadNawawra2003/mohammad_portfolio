@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { profile } from "@/data/profile";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 /**
  * The portrait centerpiece. Uses the exact uploaded photo (background removed),
@@ -35,7 +35,7 @@ export function PortraitCard({ className }: { className?: string }) {
 
       {/* portrait */}
       <Image
-        src="/images/portrait.png"
+        src={withBasePath("/images/portrait.png")}
         alt={`Portrait of ${profile.name}`}
         width={560}
         height={736}

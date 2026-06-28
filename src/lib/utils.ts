@@ -21,8 +21,14 @@ export function currentYear(): number {
   return new Date().getFullYear();
 }
 
+/** Prefix a root-relative path with the deploy base path (for sub-path hosting). */
+export function withBasePath(path: string): string {
+  const bp = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  return `${bp}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 /** Absolute URL helper for canonical / OG metadata. */
 export function absoluteUrl(path = ""): string {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mohammadalnawawreh.com";
-  return `${base.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`;
+  return `${base.replace(/\/$/, "")}${withBasePath(path)}`;
 }

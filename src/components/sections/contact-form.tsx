@@ -28,23 +28,10 @@ export function ContactForm() {
     setStatus("submitting");
     setServerError(null);
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
-      });
-      const data = (await res.json()) as { ok: boolean; fallback?: boolean; error?: string };
-
-      if (!res.ok || !data.ok) {
-        throw new Error(data.error ?? "Something went wrong.");
-      }
-
-      if (data.fallback) {
-        // No mail provider configured — open the user's mail client.
-        const subject = encodeURIComponent(`Portfolio enquiry from ${values.name}`);
-        const body = encodeURIComponent(`${values.message}\n\n— ${values.name} (${values.email})`);
-        window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-      }
+      // Static host — compose the message and hand off to the visitor's mail client.
+      const subject = encodeURIComponent(`Portfolio enquiry from ${values.name}`);
+      const body = encodeURIComponent(`${values.message}\n\n— ${values.name} (${values.email})`);
+      window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
 
       setStatus("success");
       reset();
