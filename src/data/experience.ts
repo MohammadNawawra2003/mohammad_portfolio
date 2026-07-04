@@ -11,11 +11,11 @@ export const experience: ExperienceItem[] = [
     end: "Present",
     current: true,
     highlights: [
-      "Undergoing hands-on training on Odoo v19 modules, including Inventory, Accounting, CRM, Sales, and Purchase.",
+      "Undergoing hands-on training on Odoo (v18/v19) modules, including Sales and Finance.",
       "Developing a deep understanding of module functionalities and workflows to support business process optimization.",
       "Gaining practical experience with Odoo.sh for module deployment and project management.",
     ],
-    stack: ["Odoo v19", "Inventory", "Accounting", "CRM", "Sales", "Odoo.sh"],
+    stack: ["Odoo v18/v19", "Sales", "Finance", "Odoo.sh"],
     accent: "#8B5CF6",
   },
   {
@@ -28,9 +28,9 @@ export const experience: ExperienceItem[] = [
     highlights: [
       "Developed and customized Odoo modules (v16/v17) using Python and the Odoo ORM to automate business processes.",
       "Built REST APIs to integrate Odoo with external systems (registration and payment), handling data exchange and authentication.",
-      "Customized ERP modules for client implementations, improving workflow automation and data accuracy.",
+      "Customized ERP and HR modules for client implementations, improving workflow automation and data accuracy.",
     ],
-    stack: ["Odoo v16/v17", "Python", "ORM", "REST API", "PostgreSQL"],
+    stack: ["Odoo v16/v17", "Python", "ORM", "REST API", "PostgreSQL", "HR"],
     accent: "#22D3EE",
   },
   {
