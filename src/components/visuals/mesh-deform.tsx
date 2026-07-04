@@ -41,7 +41,15 @@ export function MeshDeform({ className }: { className?: string }) {
   }, []);
 
   return (
-    <svg viewBox="0 0 280 150" className={cn("h-auto w-full", className)} role="img" aria-label="Deformed finite-element mesh of a cantilever beam">
+    <motion.svg
+      viewBox="0 0 280 150"
+      className={cn("h-auto w-full", className)}
+      role="img"
+      aria-label="Deformed finite-element mesh of a cantilever beam"
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportOnce}
+    >
       {/* support */}
       <line x1="20" y1="34" x2="20" y2="118" stroke="var(--text-faint)" strokeWidth="2" />
       {/* deformed mesh */}
@@ -54,9 +62,6 @@ export function MeshDeform({ className }: { className?: string }) {
             stroke="rgba(167,139,250,0.55)"
             strokeWidth="0.7"
             variants={drawLine}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
             transition={{ duration: 1, delay: (i % cols) * 0.04 }}
           />
         ))}
@@ -71,6 +76,6 @@ export function MeshDeform({ className }: { className?: string }) {
         <path d={`M${x0 + w - 4} 112 L${x0 + w} 120 L${x0 + w + 4} 112 Z`} />
       </g>
       <text x="6" y="140" fontSize="7" fill="var(--text-faint)" fontFamily="var(--font-mono)">deformed mesh · tip load</text>
-    </svg>
+    </motion.svg>
   );
 }

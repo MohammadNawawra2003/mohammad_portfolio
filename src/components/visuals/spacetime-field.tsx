@@ -27,7 +27,15 @@ export function SpacetimeField({ className }: { className?: string }) {
   }, []);
 
   return (
-    <svg viewBox="0 0 280 168" className={cn("h-auto w-full", className)} role="img" aria-label="Space-time heatmap of a propagating wave">
+    <motion.svg
+      viewBox="0 0 280 168"
+      className={cn("h-auto w-full", className)}
+      role="img"
+      aria-label="Space-time heatmap of a propagating wave"
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportOnce}
+    >
       <defs>
         <linearGradient id="st-grad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#0b1220" />
@@ -46,14 +54,17 @@ export function SpacetimeField({ className }: { className?: string }) {
             height={w - 1.5}
             rx="1.5"
             fill="url(#st-grad)"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.12 + c.v * 0.88 }}
-            viewport={viewportOnce}
-            transition={{ duration: 0.5, delay: c.t * 0.06 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 0.12 + c.v * 0.88,
+                transition: { duration: 0.5, delay: c.t * 0.06 },
+              },
+            }}
           />
         ))}
       </g>
       <text x="250" y="164" fontSize="7" fill="var(--text-faint)" fontFamily="var(--font-mono)" textAnchor="end">x →</text>
-    </svg>
+    </motion.svg>
   );
 }
