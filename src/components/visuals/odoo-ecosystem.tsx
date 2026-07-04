@@ -9,7 +9,6 @@ import {
   Truck,
   Users,
 } from "lucide-react";
-import { viewportOnce } from "@/lib/motion";
 import { usePrefersReducedMotion } from "@/lib/hooks";
 import { cn } from "@/lib/utils";
 
@@ -77,11 +76,10 @@ export function OdooEcosystem({ className }: { className?: string }) {
           <motion.g
             key={m.label}
             initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={viewportOnce}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: 0.2 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
           >
-            <circle cx={p.x} cy={p.y} r="26" fill="var(--surface-strong)" stroke="var(--border-strong)" strokeWidth="1" />
+            <circle cx={p.x} cy={p.y} r="26" fill="var(--bg-elev)" stroke="var(--border-strong)" strokeWidth="1" />
             <foreignObject x={p.x - 11} y={p.y - 16} width="22" height="22">
               <Icon style={{ width: 18, height: 18, color: m.tint }} />
             </foreignObject>
@@ -95,8 +93,7 @@ export function OdooEcosystem({ className }: { className?: string }) {
       {/* central hub */}
       <motion.g
         initial={{ opacity: 0, scale: 0.6 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={viewportOnce}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
       >
         <circle cx={cx} cy={cy} r="34" fill="var(--bg-elev)" stroke="#714B67" strokeWidth="1.5" />
