@@ -1,6 +1,7 @@
 import {
   Hero,
   About,
+  Work,
   Skills,
   Experience,
   Education,
@@ -14,6 +15,7 @@ export default function HomePage() {
     <>
       <Hero />
       <About />
+      <Work />
       <Skills />
       <Experience />
       <Education />

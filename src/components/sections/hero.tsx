@@ -58,26 +58,23 @@ export function Hero() {
               intelligent ERP and business solutions.
             </motion.p>
 
-            {/* Dual-discipline pillars — communicate both crafts instantly */}
-            <motion.div variants={fadeUp} className="mt-7 flex flex-wrap gap-3">
-              {[
-                { k: "Computational Engineering", v: "FEM · CFD · Numerical Methods" },
-                { k: "Odoo Development", v: "Modules · APIs · Automation" },
-              ].map((p) => (
-                <div
-                  key={p.k}
-                  className="rounded-lg border border-[var(--border)] bg-surface px-4 py-2.5"
-                >
-                  <p className="text-sm font-semibold text-text">{p.k}</p>
-                  <p className="font-mono text-[0.7rem] text-text-faint">{p.v}</p>
-                </div>
+            {/* Lightweight domain strip — signals both crafts without a heavy block */}
+            <motion.ul
+              variants={fadeUp}
+              className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-1.5 font-mono text-[0.7rem] uppercase tracking-wider text-text-faint"
+            >
+              {["FEM", "CFD", "Numerical Methods", "Odoo", "Python", "REST APIs"].map((k, i) => (
+                <li key={k} className="flex items-center gap-3">
+                  {i > 0 ? <span aria-hidden className="text-brand-500/50">/</span> : null}
+                  <span>{k}</span>
+                </li>
               ))}
-            </motion.div>
+            </motion.ul>
 
             <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-3">
               <Magnetic>
                 <Button asChild size="lg" className="h-14 px-8 text-base">
-                  <a href="#engineering" data-cursor="View">
+                  <a href="#work" data-cursor="View">
                     View My Work
                     <ArrowRight aria-hidden />
                   </a>

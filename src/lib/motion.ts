@@ -61,6 +61,20 @@ export const staggerContainer = (stagger = 0.06, delayChildren = 0): Variants =>
   },
 });
 
+/**
+ * Clip + rise reveal — the entrance language reserved for the Selected Work
+ * cards, deliberately distinct from the site-wide `fadeUp`.
+ */
+export const clipUp: Variants = {
+  hidden: { opacity: 0, y: 40, clipPath: "inset(12% 0% 0% 0% round 20px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    clipPath: "inset(0% 0% 0% 0% round 20px)",
+    transition: { duration: 0.7, ease: ease.out },
+  },
+};
+
 /** Line-draw for SVG paths (timeline, equations, meshes). */
 export const drawLine: Variants = {
   hidden: { pathLength: 0, opacity: 0 },

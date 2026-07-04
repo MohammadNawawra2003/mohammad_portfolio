@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { education } from "@/data/education";
 import { SectionHeader, GlassCard } from "@/components/ui";
+import { DotGrid } from "@/components/visuals";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/motion";
 
 export function Education() {
   return (
-    <section id="education" className="section pt-0">
-      <div className="container-page">
+    <section id="education" className="section relative overflow-hidden pt-0">
+      <DotGrid variant="line" className="opacity-40 mask-b-fade" />
+      <div className="container-page relative">
         <SectionHeader
           eyebrow="Education"
           title="Foundations"

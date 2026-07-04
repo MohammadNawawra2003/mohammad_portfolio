@@ -11,8 +11,6 @@ export { ConvergencePlot } from "./convergence-plot";
 export { SparseSolver } from "./sparse-solver";
 export { EquationGlyphs } from "./equation-glyphs";
 export { ApiArchitecture } from "./api-architecture";
-export { MatrixSolver } from "./matrix-solver";
-export { DbSchema } from "./db-schema";
 export { SpacetimeField } from "./spacetime-field";
 export { MeshDeform } from "./mesh-deform";
 export { SimulationPipeline } from "./simulation-pipeline";

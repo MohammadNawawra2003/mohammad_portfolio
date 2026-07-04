@@ -83,11 +83,7 @@ export interface Capability {
 
 export type ProjectCategory = "Computational" | "Odoo" | "Research";
 
-export type ProjectVisual =
-  | "mesh-deform"
-  | "api-architecture"
-  | "spacetime"
-  | "matrix-solver";
+export type ProjectVisual = "mesh-deform" | "api-architecture" | "spacetime";
 
 export interface Project {
   title: string;
@@ -98,6 +94,8 @@ export interface Project {
   tags: string[];
   /** Notable, CV-grounded outcome. */
   highlight: string;
+  /** Where / when the work happened (company · country). */
+  context: string;
   /** Unique visual key — each project uses a different graphic. */
   visual: ProjectVisual;
   accent: string;

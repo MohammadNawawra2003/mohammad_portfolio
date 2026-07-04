@@ -48,7 +48,7 @@ function Entry({ item, index }: { item: ExperienceItem; index: number }) {
       </div>
 
       {/* content */}
-      <div className="rounded-xl border border-[var(--border)] bg-bg-elev/40 p-5 transition-colors duration-300 hover:border-[var(--border-strong)] sm:p-6">
+      <div className="surface-card p-5 transition-colors duration-300 hover:border-[var(--border-strong)] sm:p-6">
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div>
             <h3 className="text-h3 font-semibold text-text">{item.role}</h3>

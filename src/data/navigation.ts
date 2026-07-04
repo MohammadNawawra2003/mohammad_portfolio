@@ -3,6 +3,7 @@ import type { NavItem } from "@/types";
 /** Primary navigation. Anchors map to section ids on the single-page layout. */
 export const navItems: NavItem[] = [
   { label: "About", href: "#about" },
+  { label: "Work", href: "#work" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Odoo", href: "#odoo" },
@@ -13,6 +14,7 @@ export const navItems: NavItem[] = [
 /** Section ids tracked by the scroll-spy, in document order. */
 export const sectionIds = [
   "about",
+  "work",
   "skills",
   "experience",
   "education",
