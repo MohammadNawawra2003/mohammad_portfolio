@@ -55,7 +55,7 @@ export function Skills() {
         <SectionHeader
           eyebrow="Skills"
           title="A toolkit spanning simulation and software"
-          description="From numerical solvers to production ERP — pick a discipline to see what I work with."
+          description="From numerical solvers to production ERP. Pick a discipline to see what I work with."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[300px_1fr] lg:gap-10">

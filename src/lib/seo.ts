@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { profile } from "@/data/profile";
 import { absoluteUrl, withBasePath } from "@/lib/utils";
 
-const TITLE = `${profile.name} — Computational Engineer & Odoo Developer`;
+const TITLE = `${profile.name} | Computational Engineer & Odoo Developer`;
 const DESCRIPTION = profile.summary;
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(absoluteUrl()),
   title: {
     default: TITLE,
-    template: `%s — ${profile.name}`,
+    template: `%s | ${profile.name}`,
   },
   description: DESCRIPTION,
   applicationName: `${profile.name} Portfolio`,
@@ -43,7 +43,7 @@ export const siteMetadata: Metadata = {
         url: absoluteUrl("/images/og.png"),
         width: 1200,
         height: 630,
-        alt: `${profile.name} — Computational Engineer & Odoo Developer`,
+        alt: `${profile.name} | Computational Engineer & Odoo Developer`,
       },
     ],
   },

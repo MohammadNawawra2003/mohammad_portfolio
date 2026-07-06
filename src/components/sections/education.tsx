@@ -46,7 +46,7 @@ export function Education() {
                   </div>
                   <div className="flex items-center gap-3 text-xs text-text-faint">
                     <span className="font-mono">
-                      {edu.start} — {edu.end}
+                      {edu.start} to {edu.end}
                     </span>
                     <span className="flex items-center gap-1">
                       <MapPin className="size-3" />

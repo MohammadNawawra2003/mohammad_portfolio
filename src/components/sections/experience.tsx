@@ -30,7 +30,7 @@ function Entry({ item, index }: { item: ExperienceItem; index: number }) {
       {/* date rail (desktop) */}
       <div className="hidden pt-1 text-right sm:block">
         <p className="font-mono text-sm font-semibold text-text">{item.start}</p>
-        <p className="font-mono text-xs text-text-faint">— {item.end}</p>
+        <p className="font-mono text-xs text-text-faint">to {item.end}</p>
       </div>
 
       {/* node + monogram */}
@@ -68,7 +68,7 @@ function Entry({ item, index }: { item: ExperienceItem; index: number }) {
 
         {/* date on mobile */}
         <p className="mt-2 font-mono text-xs text-text-faint sm:hidden">
-          {item.start} — {item.end}
+          {item.start} to {item.end}
         </p>
 
         <ul className="mt-4 flex flex-col gap-2">
@@ -103,7 +103,7 @@ export function Experience() {
         <SectionHeader
           eyebrow="Experience"
           title="The work so far"
-          description="Internships across ERP development and computational engineering — remote, hybrid, and across borders."
+          description="Internships across ERP development and computational engineering: remote, hybrid, and across borders."
         />
 
         <div className="relative mt-14">

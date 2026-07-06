@@ -45,7 +45,7 @@ export function Footer() {
               <Logo className="h-8" />
             </a>
             <p className="mt-4 text-sm leading-relaxed text-text-muted">
-              {profile.name} — {profile.title}.
+              {profile.name}, {profile.title}.
             </p>
             <div className="mt-5">
               <SocialLinks />

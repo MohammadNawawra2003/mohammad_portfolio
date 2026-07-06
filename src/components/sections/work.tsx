@@ -96,7 +96,7 @@ export function Work() {
         <SectionHeader
           eyebrow="Selected Work"
           title="Things I've actually built"
-          description="Three case studies where the theory left the page — from an ERP payment integration to a finite-element stress study and space–time PDE research."
+          description="Three case studies where the theory left the page, from an ERP payment integration to a finite-element stress study and space-time PDE research."
         />
 
         {/* Featured — large split row */}

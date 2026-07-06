@@ -30,7 +30,7 @@ export function ContactForm() {
     try {
       // Static host — compose the message and hand off to the visitor's mail client.
       const subject = encodeURIComponent(`Portfolio enquiry from ${values.name}`);
-      const body = encodeURIComponent(`${values.message}\n\n— ${values.name} (${values.email})`);
+      const body = encodeURIComponent(`${values.message}\n\nFrom ${values.name} (${values.email})`);
       window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
 
       setStatus("success");
@@ -103,7 +103,7 @@ export function ContactForm() {
 
         <p aria-live="polite" className="text-sm">
           {status === "success" ? (
-            <span className="text-success">Thanks — I&apos;ll be in touch soon.</span>
+            <span className="text-success">Thanks, I&apos;ll be in touch soon.</span>
           ) : status === "error" ? (
             <span className="text-danger">{serverError}</span>
           ) : null}

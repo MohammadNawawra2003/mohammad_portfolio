@@ -12,7 +12,7 @@ interface Equation {
 const equations: Equation[] = [
   { expr: "∇·σ + b = 0", label: "Equilibrium" },
   { expr: "K u = f", label: "FEM system" },
-  { expr: "ρ(∂u/∂t + u·∇u) = −∇p + μ∇²u + f", label: "Navier–Stokes" },
+  { expr: "ρ(∂u/∂t + u·∇u) = −∇p + μ∇²u + f", label: "Navier-Stokes" },
   { expr: "∂u/∂t = α ∇²u", label: "Heat equation" },
 ];
 

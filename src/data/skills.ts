@@ -31,7 +31,7 @@ export const skillGroups: SkillGroup[] = [
     icon: Boxes,
     description: "Custom modules, ORM, and business logic.",
     skills: [
-      { name: "Odoo v16–v19", level: "core" },
+      { name: "Odoo v16-v19", level: "core" },
       { name: "Odoo ORM", level: "core" },
       { name: "Odoo.sh", level: "proficient" },
       { name: "Workflows", level: "proficient" },

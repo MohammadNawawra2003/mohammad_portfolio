@@ -16,7 +16,7 @@ import type { Capability } from "@/types";
 export const odooCapabilities: Capability[] = [
   {
     title: "Custom Modules",
-    description: "Building Odoo v16–v19 modules with Python and the Odoo ORM.",
+    description: "Building Odoo v16-v19 modules with Python and the Odoo ORM.",
     icon: Blocks,
   },
   {

@@ -38,11 +38,11 @@ export function OdooExpertise() {
                   every module connected
                 </>
               }
-              description="I build and customize the modules a business runs on — and wire them together with Python, the Odoo ORM, and REST integrations across v16 through v19."
+              description="I build and customize the modules a business runs on, and wire them together with Python, the Odoo ORM, and REST integrations across v16 through v19."
             />
 
             <div className="mt-6 flex flex-wrap gap-2">
-              <Badge variant="odoo">v16 – v19</Badge>
+              <Badge variant="odoo">v16 to v19</Badge>
               <Badge variant="odoo">Python · ORM</Badge>
               <Badge variant="odoo">Odoo.sh</Badge>
             </div>

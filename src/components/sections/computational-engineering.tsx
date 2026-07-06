@@ -26,7 +26,7 @@ export function ComputationalEngineering() {
           align="center"
           eyebrow="Computational Engineering"
           title="The science underneath"
-          description="A B.Sc. in Computer Simulation Engineering means I treat every model with the same rigor — accuracy, stability, and convergence first."
+          description="A B.Sc. in Computer Simulation Engineering means I treat every model with the same rigor: accuracy, stability, and convergence first."
         />
 
         {/* Signature pipeline ribbon */}
@@ -55,7 +55,7 @@ export function ComputationalEngineering() {
             </div>
             <figcaption className="mt-4 text-sm leading-relaxed text-text-muted">
               <span className="font-medium text-text">Finite-element stress fields.</span> Modeling
-              structures under load — characterising mesh sensitivity, shear-locking and hourglass
+              structures under load, characterising mesh sensitivity, shear-locking and hourglass
               effects so a result can be trusted.
             </figcaption>
           </motion.figure>
@@ -70,7 +70,7 @@ export function ComputationalEngineering() {
             <p className="eyebrow text-[0.6rem]">Mathematical Modeling</p>
             <h3 className="mt-3 text-h3 font-semibold text-text">Governing equations</h3>
             <p className="mt-2 text-sm leading-relaxed text-text-muted">
-              The mathematics behind the models — equilibrium, the FEM system, Navier–Stokes, and the
+              The mathematics behind the models: equilibrium, the FEM system, Navier-Stokes, and the
               heat equation.
             </p>
             <EquationGlyphs className="mt-5" />
@@ -83,13 +83,13 @@ export function ComputationalEngineering() {
             {
               eyebrow: "CFD Simulation",
               title: "Flow & velocity fields",
-              body: "Momentum, pressure, and velocity — the continuum mechanics behind moving fluids.",
+              body: "Momentum, pressure, and velocity: the continuum mechanics behind moving fluids.",
               visual: <CfdAirfoil />,
             },
             {
               eyebrow: "Mesh Convergence",
               title: "Convergence & accuracy",
-              body: "Refining discretisation until the numbers stop moving — error against degrees of freedom.",
+              body: "Refining discretisation until the numbers stop moving, tracking error against degrees of freedom.",
               visual: <ConvergencePlot />,
             },
           ].map((tile, i) => (
@@ -128,7 +128,7 @@ export function ComputationalEngineering() {
             <figcaption className="mt-3">
               <span className="text-sm font-semibold text-text">From PDEs to solvers</span>
               <p className="mt-1 text-sm leading-relaxed text-text-muted">
-                Discretising operators into sparse linear systems and driving the residual to zero —
+                Discretising operators into sparse linear systems and driving the residual to zero,
                 with the stability analysis that keeps them honest.
               </p>
             </figcaption>

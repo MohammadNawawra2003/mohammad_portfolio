@@ -12,7 +12,7 @@ export const profile: Profile = {
     "Motivated Computational Engineer with a strong academic background in numerical methods, finite element analysis, and programming. Proficient in Python, FEA tools, and Odoo development, with experience in developing custom modules, building APIs, and automating business processes.",
   about: [
     "I work at the intersection of two disciplines that rarely meet: rigorous computational engineering and clean, production software. I model physical systems with finite-element and numerical methods, then translate that same precision into ERP platforms that businesses actually run on.",
-    "My engineering foundation comes from a B.Sc. in Computer Simulation Engineering — numerical methods, finite-element analysis, and modeling — sharpened by an exchange semester at UCLouvain studying space-time discontinuous Galerkin methods for hyperbolic equations.",
+    "My engineering foundation comes from a B.Sc. in Computer Simulation Engineering, covering numerical methods, finite-element analysis, and modeling, and sharpened by an exchange semester at UCLouvain studying space-time discontinuous Galerkin methods for hyperbolic equations.",
     "Today I build and customize Odoo modules with Python and the Odoo ORM, design REST APIs that connect ERP systems to the outside world, and automate the business processes in between. Whether it is a stress field on a cantilever beam or a payment integration inside Odoo, I care about the same things: accuracy, stability, and a result you can trust.",
   ],
   location: "Bethlehem, Palestine",
@@ -58,7 +58,7 @@ export const profile: Profile = {
 export const stats: Stat[] = [
   { value: 3.39, label: "GPA / 4.0", decimals: 2 },
   { value: 3, suffix: "", label: "Internships" },
-  { value: 4, suffix: "", label: "Countries — work & study" },
+  { value: 4, suffix: "", label: "Countries, work & study" },
   { value: 7, suffix: "+", label: "Core tools & frameworks" },
 ];
 
