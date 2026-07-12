@@ -16,7 +16,7 @@ export const projects: Project[] = [
     tags: ["Odoo v16/v17", "Python", "Odoo ORM", "REST API", "PostgreSQL", "Auth"],
     highlight: "Automated the registration-to-invoice flow across two external systems.",
     visual: "api-architecture",
-    accent: "#22D3EE",
+    accent: "#2DD4BF",
     featured: true,
   },
   {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     tags: ["ABAQUS", "FEA", "Mesh Sensitivity", "Structural Mechanics"],
     highlight: "Characterised shear-locking & hourglass effects across mesh refinements.",
     visual: "mesh-deform",
-    accent: "#D946EF",
+    accent: "#F59E0B",
   },
   {
     title: "Space-Time DG for Hyperbolic PDEs",
@@ -41,6 +41,6 @@ export const projects: Project[] = [
     tags: ["Numerical Methods", "DG / FEM", "Hyperbolic PDEs", "Stability"],
     highlight: "Space-time DG discretisation for a propagating wavefront.",
     visual: "spacetime",
-    accent: "#8B5CF6",
+    accent: "#4F46E5",
   },
 ];

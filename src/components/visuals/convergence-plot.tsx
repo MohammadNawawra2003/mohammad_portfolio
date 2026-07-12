@@ -48,7 +48,7 @@ export function ConvergencePlot({ className }: { className?: string }) {
     },
     {
       label: "P2 · O(h²)",
-      color: "#a78bfa",
+      color: "#818cf8",
       pts: [
         [78, 70],
         [142, 110],
@@ -59,7 +59,7 @@ export function ConvergencePlot({ className }: { className?: string }) {
     },
     {
       label: "P3 · O(h³)",
-      color: "#22d3ee",
+      color: "#2dd4bf",
       pts: [
         [78, 84],
         [142, 132],
@@ -87,8 +87,8 @@ export function ConvergencePlot({ className }: { className?: string }) {
     >
       <defs>
         <linearGradient id="conv-band" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#a78bfa" stopOpacity="0.28" />
-          <stop offset="100%" stopColor="#a78bfa" stopOpacity="0.05" />
+          <stop offset="0%" stopColor="#818cf8" stopOpacity="0.28" />
+          <stop offset="100%" stopColor="#818cf8" stopOpacity="0.05" />
         </linearGradient>
       </defs>
 

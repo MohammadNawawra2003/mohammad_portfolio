@@ -19,7 +19,7 @@ export function CfdAirfoil({ className }: { className?: string }) {
   // surface compress and accelerate → brighter cyan; lower surface stays slower.
   const streamlines = [
     { d: "M14 44 C 130 42, 200 36, 348 40", c: "#38bdf8", w: 1.3, o: 0.7 },
-    { d: "M14 70 C 120 68, 170 54, 232 56 C 288 58, 322 64, 348 66", c: "#22d3ee", w: 1.5, o: 0.85 },
+    { d: "M14 70 C 120 68, 170 54, 232 56 C 288 58, 322 64, 348 66", c: "#2dd4bf", w: 1.5, o: 0.85 },
     { d: "M14 96 C 110 96, 150 74, 202 78 C 256 82, 312 92, 348 94", c: "#67e8f9", w: 1.7, o: 0.95 },
     { d: "M14 122 C 96 122, 138 98, 192 103 C 246 108, 304 118, 348 120", c: "#a5f3fc", w: 1.8, o: 1 },
     { d: "M14 178 C 110 178, 168 186, 236 183 C 296 180, 324 177, 348 177", c: "#60a5fa", w: 1.5, o: 0.8 },
@@ -31,7 +31,7 @@ export function CfdAirfoil({ className }: { className?: string }) {
   const particles = [
     { y0: 96, y1: 78, y2: 94, c: "#a5f3fc", dur: 3.4, delay: 0 },
     { y0: 122, y1: 103, y2: 120, c: "#67e8f9", dur: 3, delay: 0.8 },
-    { y0: 70, y1: 56, y2: 66, c: "#22d3ee", dur: 3.8, delay: 1.6 },
+    { y0: 70, y1: 56, y2: 66, c: "#2dd4bf", dur: 3.8, delay: 1.6 },
     { y0: 178, y1: 184, y2: 177, c: "#60a5fa", dur: 4.2, delay: 0.4 },
   ];
 
@@ -49,17 +49,17 @@ export function CfdAirfoil({ className }: { className?: string }) {
         <linearGradient id="cfd-vlegend" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#1e3a8a" />
           <stop offset="35%" stopColor="#60a5fa" />
-          <stop offset="70%" stopColor="#22d3ee" />
+          <stop offset="70%" stopColor="#2dd4bf" />
           <stop offset="100%" stopColor="#a5f3fc" />
         </linearGradient>
         <linearGradient id="cfd-foil" x1="0" y1="0" x2="1" y2="0.4">
-          <stop offset="0%" stopColor="#a78bfa" />
-          <stop offset="55%" stopColor="#7c3aed" />
+          <stop offset="0%" stopColor="#818cf8" />
+          <stop offset="55%" stopColor="#4338ca" />
           <stop offset="100%" stopColor="#4c1d95" />
         </linearGradient>
         <radialGradient id="cfd-suction" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#6d28d9" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="#6d28d9" stopOpacity="0" />
+          <stop offset="0%" stopColor="#3730a3" stopOpacity="0.55" />
+          <stop offset="100%" stopColor="#3730a3" stopOpacity="0" />
         </radialGradient>
         <radialGradient id="cfd-stag" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stopColor="#fb923c" stopOpacity="0.6" />
@@ -90,7 +90,7 @@ export function CfdAirfoil({ className }: { className?: string }) {
       {/* velocity / pressure field (blurred) */}
       <g filter="url(#cfd-blur)">
         <ellipse cx="186" cy="108" rx="92" ry="30" fill="url(#cfd-suction)" />
-        <ellipse cx="210" cy="118" rx="70" ry="20" fill="#22d3ee" opacity="0.18" />
+        <ellipse cx="210" cy="118" rx="70" ry="20" fill="#2dd4bf" opacity="0.18" />
         <ellipse cx="110" cy="150" rx="26" ry="20" fill="url(#cfd-stag)" />
         <ellipse cx="300" cy="150" rx="60" ry="24" fill="#1e3a8a" opacity="0.22" />
       </g>

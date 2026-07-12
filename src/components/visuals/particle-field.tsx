@@ -78,7 +78,7 @@ export function ParticleField({ className }: { className?: string }) {
           const dist = Math.hypot(dx, dy);
           if (dist < maxDist) {
             const alpha = (1 - dist / maxDist) * 0.18;
-            ctx!.strokeStyle = `rgba(139,92,246,${alpha})`;
+            ctx!.strokeStyle = `rgba(79, 70, 229,${alpha})`;
             ctx!.lineWidth = 1;
             ctx!.beginPath();
             ctx!.moveTo(a.x, a.y);
@@ -89,7 +89,7 @@ export function ParticleField({ className }: { className?: string }) {
 
         const md = Math.hypot(a.x - mouse.x, a.y - mouse.y);
         const near = md < 160;
-        ctx!.fillStyle = near ? "rgba(34,211,238,0.9)" : "rgba(167,139,250,0.5)";
+        ctx!.fillStyle = near ? "rgba(45, 212, 191,0.9)" : "rgba(167,139,250,0.5)";
         ctx!.beginPath();
         ctx!.arc(a.x, a.y, near ? 2.4 : 1.6, 0, Math.PI * 2);
         ctx!.fill();

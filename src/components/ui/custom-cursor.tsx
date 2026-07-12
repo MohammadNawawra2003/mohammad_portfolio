@@ -66,7 +66,7 @@ export function CustomCursor() {
         animate={{
           width: active ? 56 : 32,
           height: active ? 56 : 32,
-          backgroundColor: active ? "rgba(124,58,237,0.12)" : "rgba(124,58,237,0)",
+          backgroundColor: active ? "rgba(67, 56, 202,0.12)" : "rgba(67, 56, 202,0)",
         }}
         transition={{ type: "spring", stiffness: 300, damping: 24 }}
       >

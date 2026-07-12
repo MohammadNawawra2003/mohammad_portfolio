@@ -12,3 +12,4 @@ export { Magnetic } from "./magnetic-button";
 export { Marquee } from "./marquee";
 export { CopyChip } from "./copy-chip";
 export { CustomCursor } from "./custom-cursor";
+export { SpotlightGlow } from "./spotlight-glow";

@@ -58,10 +58,10 @@ export const odooCapabilities: Capability[] = [
 
 /** Apps shown in the recreated Odoo dashboard mock (original recreation). */
 export const odooApps: { name: string; icon: typeof Settings2; tint: string }[] = [
-  { name: "Inventory", icon: Blocks, tint: "#8B5CF6" },
-  { name: "Accounting", icon: FileText, tint: "#22D3EE" },
-  { name: "CRM", icon: GitBranch, tint: "#D946EF" },
-  { name: "Sales", icon: Workflow, tint: "#A78BFA" },
+  { name: "Inventory", icon: Blocks, tint: "#4F46E5" },
+  { name: "Accounting", icon: FileText, tint: "#2DD4BF" },
+  { name: "CRM", icon: GitBranch, tint: "#F59E0B" },
+  { name: "Sales", icon: Workflow, tint: "#818CF8" },
   { name: "Purchase", icon: Link2, tint: "#34D399" },
   { name: "Settings", icon: Settings2, tint: "#60A5FA" },
 ];

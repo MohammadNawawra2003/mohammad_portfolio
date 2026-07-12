@@ -55,29 +55,32 @@ export function ContactForm() {
       />
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="Name" error={errors.name?.message}>
+        <Field name="name" label="Name" error={errors.name?.message}>
           <Input
             placeholder="Your name"
             aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "name-error" : undefined}
             autoComplete="name"
             {...register("name")}
           />
         </Field>
-        <Field label="Email" error={errors.email?.message}>
+        <Field name="email" label="Email" error={errors.email?.message}>
           <Input
             type="email"
             placeholder="you@example.com"
             aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "email-error" : undefined}
             autoComplete="email"
             {...register("email")}
           />
         </Field>
       </div>
 
-      <Field label="Message" error={errors.message?.message}>
+      <Field name="message" label="Message" error={errors.message?.message}>
         <Textarea
           placeholder="Tell me about your project or opportunity…"
           aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? "message-error" : undefined}
           {...register("message")}
         />
       </Field>
@@ -114,10 +117,12 @@ export function ContactForm() {
 }
 
 function Field({
+  name,
   label,
   error,
   children,
 }: {
+  name: string;
   label: string;
   error?: string;
   children: React.ReactNode;
@@ -126,7 +131,11 @@ function Field({
     <label className="flex flex-col gap-1.5">
       <span className="text-sm font-medium text-text">{label}</span>
       {children}
-      {error ? <span className="text-xs text-danger">{error}</span> : null}
+      {error ? (
+        <span id={`${name}-error`} role="alert" className="text-xs text-danger">
+          {error}
+        </span>
+      ) : null}
     </label>
   );
 }

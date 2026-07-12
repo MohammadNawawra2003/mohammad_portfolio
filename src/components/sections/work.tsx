@@ -105,7 +105,7 @@ export function Work() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="surface-card group mt-12 grid items-center gap-6 p-6 transition-colors duration-500 hover:border-[var(--border-strong)] sm:p-8 lg:grid-cols-[1.15fr_1fr] lg:gap-10"
+          className="surface-card spot-card group mt-12 grid items-center gap-6 p-6 transition-colors duration-500 hover:border-[var(--border-strong)] sm:p-8 lg:grid-cols-[1.15fr_1fr] lg:gap-10"
         >
           <ProjectMedia project={featured} tall />
           <ProjectBody project={featured} />
@@ -123,7 +123,7 @@ export function Work() {
             <motion.article
               key={project.title}
               variants={clipUp}
-              className="surface-card group flex flex-col gap-6 p-6 transition-colors duration-500 hover:border-[var(--border-strong)]"
+              className="surface-card spot-card group flex flex-col gap-6 p-6 transition-colors duration-500 hover:border-[var(--border-strong)]"
             >
               <ProjectMedia project={project} />
               <ProjectBody project={project} />

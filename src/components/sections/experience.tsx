@@ -48,7 +48,7 @@ function Entry({ item, index }: { item: ExperienceItem; index: number }) {
       </div>
 
       {/* content */}
-      <div className="surface-card p-5 transition-colors duration-300 hover:border-[var(--border-strong)] sm:p-6">
+      <div className="surface-card spot-card p-5 transition-colors duration-300 hover:border-[var(--border-strong)] sm:p-6">
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div>
             <h3 className="text-h3 font-semibold text-text">{item.role}</h3>
@@ -128,9 +128,9 @@ export function Experience() {
             />
             <defs>
               <linearGradient id="exp-rail" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#8B5CF6" />
-                <stop offset="50%" stopColor="#22D3EE" />
-                <stop offset="100%" stopColor="#D946EF" />
+                <stop offset="0%" stopColor="#4F46E5" />
+                <stop offset="50%" stopColor="#2DD4BF" />
+                <stop offset="100%" stopColor="#F59E0B" />
               </linearGradient>
             </defs>
           </svg>

@@ -56,7 +56,10 @@
       "Bash(node _shot.mjs v2_eng 1440 1150 dark section engineering)",
       "Bash(node _shot.mjs v2_footer 1440 900 dark full)",
       "Bash(export CHROME_PATH=\"/home/mohammadnw2003/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome\")",
-      "Bash(npx --yes lighthouse@12 http://localhost:3100 --preset=desktop --quiet --only-categories=performance,accessibility,best-practices,seo '--chrome-flags=--headless=new --no-sandbox --disable-gpu' --output=json --output-path=/tmp/claude-1000/-home-mohammadnw2003-Portfolio/3df0ad13-90e5-4cc7-afde-e7413284f201/scratchpad/lh.json)"
+      "Bash(npx --yes lighthouse@12 http://localhost:3100 --preset=desktop --quiet --only-categories=performance,accessibility,best-practices,seo '--chrome-flags=--headless=new --no-sandbox --disable-gpu' --output=json --output-path=/tmp/claude-1000/-home-mohammadnw2003-Portfolio/3df0ad13-90e5-4cc7-afde-e7413284f201/scratchpad/lh.json)",
+      "Read(//home/mohammadnw2003/.claude/**)",
+      "Read(//home/mohammadnw2003/**)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

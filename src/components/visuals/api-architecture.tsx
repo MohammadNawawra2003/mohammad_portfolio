@@ -22,8 +22,8 @@ export function ApiArchitecture({ className }: { className?: string }) {
     <svg viewBox="0 0 300 150" className={cn("h-auto w-full", className)} role="img" aria-label="REST API architecture from client to Odoo to database">
       <defs>
         <linearGradient id="api-wire" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#7C3AED" />
-          <stop offset="100%" stopColor="#22D3EE" />
+          <stop offset="0%" stopColor="#4338CA" />
+          <stop offset="100%" stopColor="#2DD4BF" />
         </linearGradient>
       </defs>
 
@@ -47,7 +47,7 @@ export function ApiArchitecture({ className }: { className?: string }) {
           <motion.circle
             key={`p${i}`}
             r="2.4"
-            fill="#22D3EE"
+            fill="#2DD4BF"
             cy="62"
             initial={{ cx: nodes[i]!.x + 30 }}
             animate={{ cx: [nodes[i]!.x + 30, nodes[i + 1]!.x - 6] }}
@@ -68,7 +68,7 @@ export function ApiArchitecture({ className }: { className?: string }) {
             stroke={i === 2 ? "#714B67" : "var(--border-strong)"}
             strokeWidth="1"
           />
-          <circle cx={n.x + 15} cy="56" r="3.4" fill={i === 1 ? "#22D3EE" : i === 3 ? "#34D399" : "#A78BFA"} />
+          <circle cx={n.x + 15} cy="56" r="3.4" fill={i === 1 ? "#2DD4BF" : i === 3 ? "#34D399" : "#818CF8"} />
           <text x={n.x + 15} y="71" fontSize="6.5" fill="var(--text)" textAnchor="middle" fontFamily="var(--font-mono)" fontWeight="600">
             {n.label}
           </text>
@@ -82,8 +82,8 @@ export function ApiArchitecture({ className }: { className?: string }) {
       <g fontFamily="var(--font-mono)" fontSize="6">
         {["GET", "POST", "PATCH"].map((m, i) => (
           <g key={m} transform={`translate(${48 + i * 84} 26)`}>
-            <rect width="34" height="13" rx="6.5" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.4)" strokeWidth="0.6" />
-            <text x="17" y="9" fill="#A78BFA" textAnchor="middle">{m}</text>
+            <rect width="34" height="13" rx="6.5" fill="rgba(67, 56, 202,0.12)" stroke="rgba(67, 56, 202,0.4)" strokeWidth="0.6" />
+            <text x="17" y="9" fill="#818CF8" textAnchor="middle">{m}</text>
           </g>
         ))}
       </g>

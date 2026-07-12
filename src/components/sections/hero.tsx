@@ -20,7 +20,10 @@ export function Hero() {
     >
       <GradientMesh />
       <DotGrid variant="line" className="opacity-60" />
-      <ParticleField />
+      {/* Heaviest layer: desktop only to spare low-end mobile paint cost */}
+      <div className="hidden md:block">
+        <ParticleField />
+      </div>
 
       <div className="container-page relative z-10">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.08fr] lg:gap-6">
@@ -47,7 +50,7 @@ export function Hero() {
             >
               {profile.firstName}
               <br />
-              <GradientText>{profile.lastName}</GradientText>
+              <GradientText className="text-gradient-shimmer">{profile.lastName}</GradientText>
             </motion.h1>
 
             <motion.p

@@ -81,7 +81,7 @@ export function About() {
           className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4"
         >
           {stats.map((stat) => (
-            <motion.div key={stat.label} variants={fadeUp} className="surface-card p-5">
+            <motion.div key={stat.label} variants={fadeUp} className="surface-card spot-card p-5">
               <dd className="text-h2 font-bold tabular text-gradient">
                 <CountUp value={stat.value} decimals={stat.decimals ?? 0} suffix={stat.suffix ?? ""} />
               </dd>

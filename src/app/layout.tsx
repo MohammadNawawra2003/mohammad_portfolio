@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { Providers } from "@/components/providers";
 import { Navbar, Footer, ScrollProgress } from "@/components/layout";
-import { CustomCursor } from "@/components/ui";
+import { CustomCursor, SpotlightGlow } from "@/components/ui";
 import { NoiseOverlay } from "@/components/visuals";
 import { siteMetadata, personJsonLd, websiteJsonLd } from "@/lib/seo";
 import { cn } from "@/lib/utils";
@@ -70,6 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <Footer />
           <CustomCursor />
+          <SpotlightGlow />
           <NoiseOverlay />
         </Providers>
       </body>

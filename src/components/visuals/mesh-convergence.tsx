@@ -67,7 +67,7 @@ export function MeshConvergence({ className }: { className?: string }) {
       <motion.path
         d={curve}
         fill="none"
-        stroke="#a78bfa"
+        stroke="#818cf8"
         strokeWidth="2"
         strokeLinecap="round"
         variants={drawLine}

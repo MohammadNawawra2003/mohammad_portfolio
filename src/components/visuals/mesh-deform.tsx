@@ -58,7 +58,7 @@ export function MeshDeform({ className }: { className?: string }) {
           <motion.path
             key={i}
             d={d}
-            fill={i % 2 === 0 ? "rgba(124,58,237,0.06)" : "none"}
+            fill={i % 2 === 0 ? "rgba(67, 56, 202,0.06)" : "none"}
             stroke="rgba(167,139,250,0.55)"
             strokeWidth="0.7"
             variants={drawLine}
@@ -68,7 +68,7 @@ export function MeshDeform({ className }: { className?: string }) {
       </g>
       {/* nodes */}
       {points.flat().map((p, i) => (
-        <circle key={i} cx={p.x} cy={p.y} r="1.3" fill="#22D3EE" />
+        <circle key={i} cx={p.x} cy={p.y} r="1.3" fill="#2DD4BF" />
       ))}
       {/* load arrow at tip */}
       <g stroke="#ef4444" strokeWidth="1.5" fill="#ef4444">

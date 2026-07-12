@@ -15,9 +15,9 @@ export function CfdCylinder({ className }: { className?: string }) {
   // streamlines: straight approach, split around the cylinder, wavy wake.
   const lines = [
     { d: "M8 30 C 70 30, 110 26, 232 28", c: "#38bdf8", o: 0.7 },
-    { d: "M8 52 C 70 52, 92 42, 108 44 C 130 46, 150 58, 175 54 C 200 50, 214 56, 232 54", c: "#22d3ee", o: 0.9 },
+    { d: "M8 52 C 70 52, 92 42, 108 44 C 130 46, 150 58, 175 54 C 200 50, 214 56, 232 54", c: "#2dd4bf", o: 0.9 },
     { d: "M8 78 C 70 78, 90 78, 100 78 M150 78 C 170 70, 190 86, 210 76 C 222 70, 228 80, 232 76", c: "#67e8f9", o: 0.95 },
-    { d: "M8 104 C 70 104, 92 114, 108 112 C 130 110, 150 98, 175 102 C 200 106, 214 100, 232 102", c: "#22d3ee", o: 0.9 },
+    { d: "M8 104 C 70 104, 92 114, 108 112 C 130 110, 150 98, 175 102 C 200 106, 214 100, 232 102", c: "#2dd4bf", o: 0.9 },
     { d: "M8 126 C 70 126, 110 130, 232 128", c: "#60a5fa", o: 0.7 },
   ];
 
@@ -32,7 +32,7 @@ export function CfdCylinder({ className }: { className?: string }) {
   const particles = [
     { y0: 52, y1: 50, c: "#a5f3fc", dur: 3.2, delay: 0 },
     { y0: 104, y1: 100, c: "#67e8f9", dur: 3.6, delay: 0.9 },
-    { y0: 30, y1: 28, c: "#22d3ee", dur: 4, delay: 1.7 },
+    { y0: 30, y1: 28, c: "#2dd4bf", dur: 4, delay: 1.7 },
   ];
 
   return (
@@ -45,11 +45,11 @@ export function CfdCylinder({ className }: { className?: string }) {
       <defs>
         <linearGradient id="cc-legend" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#1e3a8a" />
-          <stop offset="50%" stopColor="#22d3ee" />
+          <stop offset="50%" stopColor="#2dd4bf" />
           <stop offset="100%" stopColor="#a5f3fc" />
         </linearGradient>
         <radialGradient id="cc-cyl" cx="40%" cy="35%" r="70%">
-          <stop offset="0%" stopColor="#a78bfa" />
+          <stop offset="0%" stopColor="#818cf8" />
           <stop offset="100%" stopColor="#4c1d95" />
         </radialGradient>
         <radialGradient id="cc-stag" cx="50%" cy="50%" r="50%">
@@ -57,8 +57,8 @@ export function CfdCylinder({ className }: { className?: string }) {
           <stop offset="100%" stopColor="#fb923c" stopOpacity="0" />
         </radialGradient>
         <radialGradient id="cc-low" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#6d28d9" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#6d28d9" stopOpacity="0" />
+          <stop offset="0%" stopColor="#3730a3" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#3730a3" stopOpacity="0" />
         </radialGradient>
         <filter id="cc-blur" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="7" />

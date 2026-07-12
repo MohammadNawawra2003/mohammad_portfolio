@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const lines: { t: string; c: string }[] = [
   { t: "class SaleOrder(models.Model):", c: "text-brand-400" },
   { t: "  _inherit = 'sale.order'", c: "text-text-muted" },
-  { t: "  @api.model", c: "text-accent-cyan" },
+  { t: "  @api.model", c: "text-accent-teal" },
   { t: "  def sync_payment(self):", c: "text-brand-400" },
   { t: "    return self._post(api)", c: "text-text-muted" },
 ];

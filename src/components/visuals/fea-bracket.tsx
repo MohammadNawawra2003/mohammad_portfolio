@@ -26,12 +26,12 @@ export function FeaBracket({ className }: { className?: string }) {
           <stop offset="16%" stopColor="#f97316" />
           <stop offset="34%" stopColor="#facc15" />
           <stop offset="56%" stopColor="#22c55e" />
-          <stop offset="78%" stopColor="#22d3ee" />
+          <stop offset="78%" stopColor="#2dd4bf" />
           <stop offset="100%" stopColor="#1e3a8a" />
         </radialGradient>
         <linearGradient id="fb-legend" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#1e3a8a" />
-          <stop offset="30%" stopColor="#22d3ee" />
+          <stop offset="30%" stopColor="#2dd4bf" />
           <stop offset="52%" stopColor="#22c55e" />
           <stop offset="74%" stopColor="#facc15" />
           <stop offset="100%" stopColor="#ef4444" />

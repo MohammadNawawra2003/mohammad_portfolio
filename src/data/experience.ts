@@ -16,7 +16,7 @@ export const experience: ExperienceItem[] = [
       "Gaining practical experience with Odoo.sh for module deployment and project management.",
     ],
     stack: ["Odoo v18/v19", "Sales", "Finance", "Odoo.sh"],
-    accent: "#8B5CF6",
+    accent: "#4F46E5",
   },
   {
     role: "Odoo Development Intern",
@@ -31,7 +31,7 @@ export const experience: ExperienceItem[] = [
       "Customized ERP and HR modules for client implementations, improving workflow automation and data accuracy.",
     ],
     stack: ["Odoo v16/v17", "Python", "ORM", "REST API", "PostgreSQL", "HR"],
-    accent: "#22D3EE",
+    accent: "#2DD4BF",
   },
   {
     role: "FEA & Modeling Intern",
@@ -46,6 +46,6 @@ export const experience: ExperienceItem[] = [
       "Analyzed structural behavior in engineering applications.",
     ],
     stack: ["ABAQUS", "FEA", "Mesh Analysis", "Structural Mechanics"],
-    accent: "#D946EF",
+    accent: "#F59E0B",
   },
 ];

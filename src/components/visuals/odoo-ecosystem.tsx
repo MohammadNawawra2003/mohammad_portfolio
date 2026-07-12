@@ -13,10 +13,10 @@ import { usePrefersReducedMotion } from "@/lib/hooks";
 import { cn } from "@/lib/utils";
 
 const modules = [
-  { icon: Boxes, label: "Inventory", angle: -90, tint: "#8B5CF6" },
-  { icon: FileText, label: "Accounting", angle: -30, tint: "#22D3EE" },
-  { icon: GitBranch, label: "CRM", angle: 30, tint: "#D946EF" },
-  { icon: ShoppingCart, label: "Sales", angle: 90, tint: "#A78BFA" },
+  { icon: Boxes, label: "Inventory", angle: -90, tint: "#4F46E5" },
+  { icon: FileText, label: "Accounting", angle: -30, tint: "#2DD4BF" },
+  { icon: GitBranch, label: "CRM", angle: 30, tint: "#F59E0B" },
+  { icon: ShoppingCart, label: "Sales", angle: 90, tint: "#818CF8" },
   { icon: Truck, label: "Purchase", angle: 150, tint: "#34D399" },
   { icon: Users, label: "Employees", angle: 210, tint: "#60A5FA" },
 ];
@@ -40,8 +40,8 @@ export function OdooEcosystem({ className }: { className?: string }) {
     <svg viewBox="0 0 320 320" className={cn("h-auto w-full", className)} role="img" aria-label="Odoo module ecosystem connected to a central ORM hub">
       <defs>
         <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="rgba(124,58,237,0.55)" />
-          <stop offset="100%" stopColor="rgba(124,58,237,0)" />
+          <stop offset="0%" stopColor="rgba(67, 56, 202,0.55)" />
+          <stop offset="100%" stopColor="rgba(67, 56, 202,0)" />
         </radialGradient>
       </defs>
 
@@ -97,7 +97,7 @@ export function OdooEcosystem({ className }: { className?: string }) {
         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
       >
         <circle cx={cx} cy={cy} r="34" fill="var(--bg-elev)" stroke="#714B67" strokeWidth="1.5" />
-        <text x={cx} y={cy - 2} fontSize="13" fill="#A78BFA" textAnchor="middle" fontFamily="var(--font-mono)" fontWeight="700">
+        <text x={cx} y={cy - 2} fontSize="13" fill="#818CF8" textAnchor="middle" fontFamily="var(--font-mono)" fontWeight="700">
           odoo
         </text>
         <text x={cx} y={cy + 12} fontSize="7" fill="var(--text-faint)" textAnchor="middle" fontFamily="var(--font-mono)">

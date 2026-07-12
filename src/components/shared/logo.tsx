@@ -24,9 +24,9 @@ export function Logo({ className, animate = false }: LogoProps) {
     >
       <defs>
         <linearGradient id="logo-grad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#7C3AED" />
-          <stop offset="55%" stopColor="#A78BFA" />
-          <stop offset="100%" stopColor="#22D3EE" />
+          <stop offset="0%" stopColor="#4338CA" />
+          <stop offset="55%" stopColor="#818CF8" />
+          <stop offset="100%" stopColor="#2DD4BF" />
         </linearGradient>
       </defs>
       <motion.path

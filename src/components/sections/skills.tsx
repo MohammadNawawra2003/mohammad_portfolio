@@ -6,7 +6,7 @@ import { skillGroups, marqueeTech } from "@/data/skills";
 import type { Skill } from "@/types";
 import { SectionHeader, Marquee, Pill } from "@/components/ui";
 import { BlueprintGrid } from "@/components/visuals";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 type Tier = NonNullable<Skill["level"]>;
 const tierOrder: Tier[] = ["core", "proficient", "familiar"];
@@ -117,7 +117,7 @@ export function Skills() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="surface-card p-6 focus-visible:outline-none sm:p-8"
+              className="surface-card spot-card p-6 focus-visible:outline-none sm:p-8"
             >
               <div className="flex items-center gap-3">
                 <span className="flex size-11 items-center justify-center rounded-md bg-brand-500/10 text-brand-400">
@@ -164,12 +164,50 @@ export function Skills() {
         </div>
       </div>
 
-      {/* tech marquee */}
+      {/* tech marquee — official brand marks via svgl (21st.dev) */}
       <div className="relative mt-16">
+        <p className="eyebrow mb-6 text-center">Daily toolkit</p>
         <Marquee
           items={marqueeTech.map((tech) => (
-            <span key={tech} className="font-mono text-lg font-medium text-text-faint">
-              {tech}
+            <span
+              key={tech.name}
+              className="flex items-center gap-2.5 rounded-full border border-[var(--border)] bg-surface px-4 py-2 transition-colors duration-300 hover:border-[var(--border-strong)]"
+            >
+              {tech.logo ? (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={withBasePath(tech.logo)}
+                    alt=""
+                    aria-hidden
+                    width={20}
+                    height={20}
+                    loading="lazy"
+                    className={cn("size-5 shrink-0", tech.logoDark && "dark:hidden")}
+                  />
+                  {tech.logoDark ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={withBasePath(tech.logoDark)}
+                      alt=""
+                      aria-hidden
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                      className="hidden size-5 shrink-0 dark:block"
+                    />
+                  ) : null}
+                </>
+              ) : (
+                <span
+                  aria-hidden
+                  className="size-2 shrink-0 rounded-full"
+                  style={{ background: tech.accent }}
+                />
+              )}
+              <span className="whitespace-nowrap font-mono text-sm font-medium text-text-muted">
+                {tech.name}
+              </span>
             </span>
           ))}
         />

@@ -16,7 +16,7 @@ export const GlassCard = React.forwardRef<HTMLDivElement, GlassCardProps>(
       <Comp
         ref={ref}
         className={cn(
-          "glass relative rounded-xl shadow-md",
+          "glass spot-card relative rounded-xl shadow-md",
           edge && "glass-edge",
           interactive && "hover-lift hover:shadow-lg",
           className,

@@ -24,7 +24,7 @@ export function Aurora({ className }: { className?: string }) {
         className="absolute -top-1/3 left-1/4 h-[70vh] w-[60vw] rotate-12 opacity-40 blur-[100px] motion-safe:animate-float"
         style={{
           background:
-            "conic-gradient(from 120deg at 50% 50%, rgba(124,58,237,0.4), rgba(34,211,238,0.25), rgba(217,70,239,0.3), rgba(124,58,237,0.4))",
+            "conic-gradient(from 120deg at 50% 50%, rgba(67, 56, 202,0.4), rgba(45, 212, 191,0.25), rgba(245, 158, 11,0.3), rgba(67, 56, 202,0.4))",
         }}
       />
     </div>

@@ -71,20 +71,30 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 
-/** Flat list of marquee technologies (front-and-center brands). */
-export const marqueeTech: string[] = [
-  "Python",
-  "PostgreSQL",
-  "Odoo",
-  "Git",
-  "GitHub",
-  "VS Code",
-  "ABAQUS",
-  "MATLAB",
-  "JavaScript",
-  "C++",
-  "HTML5",
-  "CSS3",
-  "Java",
-  "Postman",
+export interface MarqueeTechItem {
+  name: string;
+  /** Brand SVG under /public (sourced via 21st.dev / svgl); text chip when absent. */
+  logo?: string;
+  /** Dark-theme variant for monochrome marks. */
+  logoDark?: string;
+  /** Brand color for the text-only fallback dot. */
+  accent?: string;
+}
+
+/** Marquee technologies with official brand marks (front-and-center brands). */
+export const marqueeTech: MarqueeTechItem[] = [
+  { name: "Python", logo: "/logos/python.svg" },
+  { name: "PostgreSQL", logo: "/logos/postgresql.svg" },
+  { name: "Odoo", accent: "#714B67" },
+  { name: "Git", logo: "/logos/git.svg" },
+  { name: "GitHub", logo: "/logos/github_light.svg", logoDark: "/logos/github_dark.svg" },
+  { name: "VS Code", logo: "/logos/vscode.svg" },
+  { name: "ABAQUS", accent: "#005386" },
+  { name: "MATLAB", logo: "/logos/matlab.svg" },
+  { name: "JavaScript", logo: "/logos/javascript.svg" },
+  { name: "C++", logo: "/logos/c-plusplus.svg" },
+  { name: "HTML5", logo: "/logos/html5.svg" },
+  { name: "CSS3", logo: "/logos/css.svg" },
+  { name: "Java", logo: "/logos/java.svg" },
+  { name: "Postman", logo: "/logos/postman.svg" },
 ];

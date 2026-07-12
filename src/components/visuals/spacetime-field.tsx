@@ -39,8 +39,8 @@ export function SpacetimeField({ className }: { className?: string }) {
       <defs>
         <linearGradient id="st-grad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#0b1220" />
-          <stop offset="45%" stopColor="#7C3AED" />
-          <stop offset="100%" stopColor="#22D3EE" />
+          <stop offset="45%" stopColor="#4338CA" />
+          <stop offset="100%" stopColor="#2DD4BF" />
         </linearGradient>
       </defs>
       <text x="6" y="12" fontSize="7" fill="var(--text-faint)" fontFamily="var(--font-mono)">t ↑</text>

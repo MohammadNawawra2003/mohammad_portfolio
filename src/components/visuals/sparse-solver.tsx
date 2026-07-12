@@ -52,8 +52,8 @@ export function SparseSolver({ className }: { className?: string }) {
     >
       <defs>
         <linearGradient id="sp-main" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#a78bfa" />
-          <stop offset="100%" stopColor="#7c3aed" />
+          <stop offset="0%" stopColor="#818cf8" />
+          <stop offset="100%" stopColor="#4338ca" />
         </linearGradient>
         <filter id="sp-glow" x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="2.4" result="b" />
@@ -92,7 +92,7 @@ export function SparseSolver({ className }: { className?: string }) {
             width="4"
             height="4"
             rx="0.8"
-            fill={d.main ? "url(#sp-main)" : "#22d3ee"}
+            fill={d.main ? "url(#sp-main)" : "#2dd4bf"}
             opacity={d.main ? 1 : 0.85}
             variants={{ hidden: { opacity: 0, scale: 0 }, visible: { opacity: d.main ? 1 : 0.85, scale: 1 } }}
           />
@@ -129,7 +129,7 @@ export function SparseSolver({ className }: { className?: string }) {
           [cx + arm, cy],
         ].map(([x, y], i) => (
           <g key={i}>
-            <circle cx={x} cy={y} r="7.5" fill="#0b0b12" stroke="#22d3ee" strokeWidth="1.2" />
+            <circle cx={x} cy={y} r="7.5" fill="#0b0b12" stroke="#2dd4bf" strokeWidth="1.2" />
             <text x={x} y={y! + 2.6} fontSize="7.5" fill="#67e8f9" textAnchor="middle">
               1
             </text>
